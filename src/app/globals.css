@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #0A0A0A;
+    --bg-surface: #141414;
+    --bg-surface-hover: #1F1F1F;
+    --border: #2A2A2A;
+    --accent: #FF6B00;
+    --accent-light: #FF8533;
+    --accent-glow: rgba(255, 107, 0, 0.2);
+    --text-primary: #FFFFFF;
+    --text-secondary: #A1A1A1;
+    --text-tertiary: #6B6B6B;
+  }
+
+  .light {
+    --bg-primary: #FAFAFA;
+    --bg-surface: #FFFFFF;
+    --bg-surface-hover: #F5F5F5;
+    --border: #E5E5E5;
+    --accent: #E55A00;
+    --accent-light: #FF6B00;
+    --text-primary: #0A0A0A;
+    --text-secondary: #525252;
+    --text-tertiary: #737373;
+  }
+
+  body {
+    @apply bg-background text-text-primary;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+  }
+
+  .light .glass {
+    @apply bg-black/5 border-black/10;
+  }
+}
