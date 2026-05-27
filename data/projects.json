@@ -1,0 +1,41 @@
+{
+  "heading": "Featured Projects",
+  "subheading": "Some of the projects I've worked on",
+  "items": [
+    {
+      "title": "Bracketology \u2013 Fantasy Gaming Platform",
+      "challenge": "Build an enterprise-grade fantasy gaming platform supporting 10,000+ daily active users with prediction-based competitions, league management, and real-time scoring systems.",
+      "solution": "Engineered a scalable backend architecture with a dual-currency virtual economy (Coins and USD-redeemable Bucks), Redis caching, Sidekiq job queuing, payment gateway APIs, and SEON fraud detection. Deployed on highly available AWS infrastructure with auto-scaling and disaster recovery.",
+      "techStack": ["Ruby on Rails", "Golang", "Redis", "Sidekiq", "AWS (EC2, EB, Auto Scaling)", "PostgreSQL", "REST APIs"],
+      "impacts": [
+        { "icon": "\ud83d\udcb0", "metric": "99.9%", "description": "Transaction accuracy across 500K+ operations" },
+        { "icon": "\u26a1", "metric": "99.5%", "description": "System availability" },
+        { "icon": "\ud83d\udcc8", "metric": "3x", "description": "Traffic spike handling during peak events" }
+      ],
+      "order": 1
+    },
+    {
+      "title": "Northstar \u2013 Recycler-to-Company Marketplace",
+      "challenge": "Modernize a legacy marketplace application connecting recyclers to companies, addressing frontend UI bugs and backend performance issues.",
+      "solution": "Diagnosed and resolved frontend UI bugs across multiple views for visual consistency. Rewrote the entire application in Golang for the backend and plain HTML/CSS for the frontend, significantly reducing complexity and improving page load performance.",
+      "techStack": ["Golang", "HTML", "CSS", "PostgreSQL", "REST APIs"],
+      "impacts": [
+        { "icon": "\ud83d\ude80", "metric": "Faster", "description": "Page load performance" },
+        { "icon": "\ud83d\udda5\ufe0f", "metric": "Cleaner", "description": "Reduced codebase complexity" }
+      ],
+      "order": 2
+    },
+    {
+      "title": "SPARKFINCH \u2013 Full-Stack Application Enhancement",
+      "challenge": "Stabilize and enhance a full-stack application suffering from numerous frontend and backend bugs, while rapidly shipping new features.",
+      "solution": "Resolved 30+ frontend and backend bugs improving application stability by 45%, leveraging AI-assisted development tools. Deployed 8+ new features to production using Django framework and GenAI-augmented development workflows.",
+      "techStack": ["Python", "Django", "GenAI-Assisted Development", "REST APIs", "PostgreSQL"],
+      "impacts": [
+        { "icon": "\ud83d\udd27", "metric": "45%", "description": "Application stability improvement" },
+        { "icon": "\u23f1\ufe0f", "metric": "35%", "description": "Reduced development time" },
+        { "icon": "\ud83d\udce6", "metric": "8+", "description": "Features deployed to production" }
+      ],
+      "order": 3
+    }
+  ]
+}

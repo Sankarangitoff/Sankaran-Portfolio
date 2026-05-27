@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
+import { headers } from 'next/headers'
 import ThemeProvider from '@/components/providers/ThemeProvider'
 import Navigation from '@/components/layout/Navigation'
 import './globals.css'
@@ -12,12 +13,15 @@ export const metadata: Metadata = {
   description: 'Backend Software Engineer specializing in Ruby on Rails, Golang, and AWS. Building scalable systems serving 10,000+ users.',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const headerList = await headers()
+  const isAdmin = headerList.get('x-is-admin') === 'true'
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans bg-background text-text-primary`}>
         <ThemeProvider>
-          <Navigation />
+          {!isAdmin && <Navigation />}
           <main>{children}</main>
         </ThemeProvider>
       </body>

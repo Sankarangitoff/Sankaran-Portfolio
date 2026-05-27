@@ -1,0 +1,20 @@
+{
+  "heading": "About Me",
+  "story": [
+    "I'm a results-driven Software Engineer with experience architecting and optimizing scalable distributed systems for production gaming platforms serving 10,000+ active users."
+  ],
+  "coreTags": ["Ruby on Rails", "Golang", "REST APIs", "Redis", "AWS", "PostgreSQL"],
+  "highlights": [
+    "Reduced API response times by **40%** through Redis caching",
+    "Improved system reliability by **30%** via Sidekiq optimization",
+    "Microservices architecture, payment gateways, fraud detection, CI/CD pipelines",
+    "AI-augmented development practices for rapid iteration in agile environments"
+  ],
+  "quickFacts": [
+    { "icon": "⚡", "stat": "40%", "label": "API Speed Boost" },
+    { "icon": "🚀", "stat": "10K+", "label": "Users Served" },
+    { "icon": "💼", "stat": "15+", "label": "Features Shipped" },
+    { "icon": "🎯", "stat": "99.5%", "label": "System Uptime" }
+  ],
+  "locationBadge": "Based in Coimbatore, India"
+}

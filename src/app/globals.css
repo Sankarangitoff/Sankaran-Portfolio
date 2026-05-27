@@ -42,3 +42,21 @@
     @apply bg-black/5 border-black/10;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .character,
+  .character * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .gw-star,
+  .gw-coin,
+  .gw-qblock,
+  .station-banner,
+  .station-glow,
+  .station-prompt {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

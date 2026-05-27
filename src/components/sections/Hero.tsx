@@ -2,18 +2,15 @@
 
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import dynamic from 'next/dynamic'
 import Button from '@/components/ui/Button'
 import type { Hero as HeroType, SiteSettings } from '@/types'
-
-const Scene = dynamic(() => import('@/components/three/Scene'), { ssr: false })
 
 interface HeroProps {
   data: HeroType
   settings: SiteSettings
 }
 
-export default function Hero({ data, settings }: HeroProps) {
+export default function Hero({ data }: HeroProps) {
   const [displayText, setDisplayText] = useState('')
   const fullText = data.title
 
@@ -32,7 +29,6 @@ export default function Hero({ data, settings }: HeroProps) {
 
   return (
     <section className="relative min-h-screen flex items-center pt-20">
-      <Scene />
       <div className="max-w-content mx-auto px-6 grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

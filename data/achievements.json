@@ -1,0 +1,12 @@
+{
+  "heading": "Achievements",
+  "subheading": "Milestones and accomplishments",
+  "items": [
+    { "icon": "\ud83c\udfc6", "metric": "High Flyer 2025", "label": "Best Team Player Award", "description": "Recognized at Techjays for exceptional collaboration, mentoring junior developers, and driving cross-functional team success", "size": "large" },
+    { "icon": "\ud83c\udf93", "metric": "8.8 CGPA", "label": "Master of IT", "description": "Sri Ramakrishna College of Arts and Science, Coimbatore (2022\u20132024)", "size": "medium" },
+    { "icon": "\ud83d\udcda", "metric": "Secretary", "label": "Dept. of IT", "description": "Led student initiatives, organized 5+ technical workshops with 200+ participants at SRCAS", "size": "medium" },
+    { "icon": "\u26a1", "metric": "40%", "label": "API Speed Boost", "description": "Reduced API response times from 350ms to 210ms across 50+ critical endpoints via Redis caching", "size": "medium" },
+    { "icon": "\ud83d\ude80", "metric": "10K+", "label": "Users Served", "description": "Built backend systems for fantasy gaming platform serving 10,000+ concurrent users with 99.5% uptime", "size": "medium" },
+    { "icon": "\ud83d\udd27", "metric": "100K+", "label": "Jobs Daily", "description": "Architected Sidekiq background job processing for payment processing, emails, and data aggregation", "size": "medium" }
+  ]
+}

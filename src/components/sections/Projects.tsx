@@ -5,7 +5,6 @@ import Image from 'next/image'
 import Card from '@/components/ui/Card'
 import SectionHeading from '@/components/ui/SectionHeading'
 import SkillTag from '@/components/ui/SkillTag'
-import { urlFor } from '@/lib/sanity/image'
 import type { Projects as ProjectsType } from '@/types'
 
 interface ProjectsProps {
@@ -30,7 +29,7 @@ export default function Projects({ data }: ProjectsProps) {
                 {project.image && (
                   <div className="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden">
                     <Image
-                      src={urlFor(project.image).width(600).height(300).url()}
+                      src={project.image}
                       alt={project.title}
                       fill
                       className="object-cover"

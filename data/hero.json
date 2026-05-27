@@ -1,0 +1,10 @@
+{
+  "greeting": "Hello, I'm",
+  "name": "Sankaran Rajendran",
+  "title": "Software Engineering Analyst",
+  "tagline": "Building scalable distributed systems for production platforms serving 10,000+ users. Specialized in Ruby on Rails, Golang, and AWS cloud infrastructure.",
+  "ctaButtons": [
+    { "label": "View Projects", "link": "#projects", "style": "primary" },
+    { "label": "Contact Me", "link": "#contact", "style": "secondary" }
+  ]
+}

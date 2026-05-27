@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import Button from '@/components/ui/Button'
 import SectionHeading from '@/components/ui/SectionHeading'
-import { urlFor } from '@/lib/sanity/image'
 import type { SiteSettings } from '@/types'
 
 interface ResumeProps {
@@ -11,9 +10,7 @@ interface ResumeProps {
 }
 
 export default function Resume({ settings }: ResumeProps) {
-  const resumeUrl = settings.resumePDF?.asset?._ref
-    ? `https://cdn.sanity.io/files/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/${process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'}/${settings.resumePDF.asset._ref.replace('file-', '').replace('-pdf', '.pdf')}`
-    : null
+  const resumeUrl = settings.resumePDF || null
 
   return (
     <section id="resume" className="py-24 md:py-32 bg-surface/50">

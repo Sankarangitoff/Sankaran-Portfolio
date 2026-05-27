@@ -1,0 +1,92 @@
+{
+  "heading": "Skills & Technologies",
+  "subheading": "Technologies I work with on a daily basis",
+  "categories": [
+    {
+      "name": "Backend",
+      "skills": [
+        { "name": "Ruby on Rails", "isPrimary": true },
+        { "name": "Golang", "isPrimary": true },
+        { "name": "Python", "isPrimary": true },
+        { "name": "Django", "isPrimary": false },
+        { "name": "REST API Design", "isPrimary": true },
+        { "name": "Microservices", "isPrimary": false },
+        { "name": "GraphQL", "isPrimary": false }
+      ],
+      "subcategories": [
+        { "name": "Languages", "skills": ["Ruby on Rails", "Golang", "Python", "Django"] },
+        { "name": "Architecture", "skills": ["REST API Design", "Microservices", "GraphQL"] }
+      ]
+    },
+    {
+      "name": "Frontend",
+      "skills": [
+        { "name": "React", "isPrimary": true },
+        { "name": "JavaScript", "isPrimary": true },
+        { "name": "HTML/CSS", "isPrimary": false },
+        { "name": "Flutter", "isPrimary": false }
+      ],
+      "subcategories": [
+        { "name": "Frameworks", "skills": ["React", "Flutter"] },
+        { "name": "Core", "skills": ["JavaScript", "HTML/CSS"] }
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "skills": [
+        { "name": "AWS (EC2, S3, EB)", "isPrimary": true },
+        { "name": "Aurora PostgreSQL", "isPrimary": false },
+        { "name": "Auto Scaling", "isPrimary": false },
+        { "name": "CloudWatch", "isPrimary": false },
+        { "name": "Docker", "isPrimary": true },
+        { "name": "CI/CD Pipelines", "isPrimary": true },
+        { "name": "Infrastructure as Code", "isPrimary": false }
+      ],
+      "subcategories": [
+        { "name": "AWS", "skills": ["AWS (EC2, S3, EB)", "Aurora PostgreSQL", "Auto Scaling", "CloudWatch"] },
+        { "name": "Tooling", "skills": ["Docker", "CI/CD Pipelines", "Infrastructure as Code"] }
+      ]
+    },
+    {
+      "name": "Databases & Caching",
+      "skills": [
+        { "name": "PostgreSQL", "isPrimary": true },
+        { "name": "Redis", "isPrimary": true },
+        { "name": "Query Optimization", "isPrimary": false },
+        { "name": "Indexing Strategies", "isPrimary": false },
+        { "name": "Data Migration", "isPrimary": false }
+      ],
+      "subcategories": [
+        { "name": "Databases", "skills": ["PostgreSQL", "Redis", "Data Migration"] },
+        { "name": "Optimization", "skills": ["Query Optimization", "Indexing Strategies"] }
+      ]
+    },
+    {
+      "name": "Performance & Scalability",
+      "skills": [
+        { "name": "Redis Caching", "isPrimary": true },
+        { "name": "Sidekiq Jobs", "isPrimary": true },
+        { "name": "Load Balancing", "isPrimary": false },
+        { "name": "Auto Scaling", "isPrimary": false }
+      ],
+      "subcategories": [
+        { "name": "Caching", "skills": ["Redis Caching", "Sidekiq Jobs"] },
+        { "name": "Infrastructure", "skills": ["Load Balancing", "Auto Scaling"] }
+      ]
+    },
+    {
+      "name": "Tools & Practices",
+      "skills": [
+        { "name": "Git & GitHub", "isPrimary": true },
+        { "name": "Linux", "isPrimary": false },
+        { "name": "Agile/Scrum", "isPrimary": true },
+        { "name": "Code Review", "isPrimary": false },
+        { "name": "GenAI / Prompt Engineering", "isPrimary": true }
+      ],
+      "subcategories": [
+        { "name": "Dev Tools", "skills": ["Git & GitHub", "Linux", "GenAI / Prompt Engineering"] },
+        { "name": "Process", "skills": ["Agile/Scrum", "Code Review"] }
+      ]
+    }
+  ]
+}
